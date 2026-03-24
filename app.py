@@ -29,7 +29,7 @@ HTML_INTERFACE = """
 def home():
     return HTML_INTERFACE
 
-@app.route('/upload', method=['POST'])
+@app.route('/upload', methods=['POST'])
 def upload():
     file = request.files['file_upload']
     if file:
